@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e9ecef;
+}
+
+th:first-child {
+  width: 10%;
+}
+
+select,
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #4a628a;
+    outline: none;
+  }
+}
+tr {
+  line-height: 1.6;
+}
+
+button {
+  margin: 3px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #7ab2d3;
+  border: 0px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #9fcbe1;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
